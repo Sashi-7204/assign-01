@@ -37,7 +37,7 @@ In the above example we have a dictionary in a dictionary with `first-name` and 
 
 Now you are given the function like the below. Fill this function with the necessary code.
 
-This function has to fill in the dictionary with the acquired input and return to the function caller which inturn will print the received dictionary.  
+This function has to fill in the dictionary with the acquired input and return to the function caller which inturn will print the received dictionary.
 
 This function has to return a dictionary with all your details.
 Make sure you fill in the right details.
@@ -45,8 +45,25 @@ Make sure you fill in the right details.
 '''
 
 def my_details():
-  """Return a dictionary with your details in the format as specified in the above instructions"""
-  pass
+ x=input('Enter the name of the dict: ')
+d={}
+n=int(input("Enter the number of inputs in the dict: "))
+for j in range(n):
+  d[x]={}
+  for i in range(0,2):
+    key=input("Enter the key name: ")
+    value=input("Enter the value: ")
+  d[x].update({key:value})
+  d.update({'Roll num':'66'})
+  d.update({'Branch':'ECE'})
+  d.update({'Specialization':'AIML'})
+  d.update({'Email-Id':'skarunak@@gitam.in'})
+  d.update({'Replit-Id':'SAI-SASHANK'})
+  d.update({'GitHub-Id':'Sashi-7204'})
+  d.update({'Moodle-Id':'VU2iEECE0100066'})
+  d.update({'Semester':'2'})
+  d.update({'Year':'1'})
+    return d
 
 
 # now call your function
@@ -56,4 +73,4 @@ print(dt)
 
 # Once you complete, no need to submit.
 # The changes will be automatically saved.
-# Wish you happy coding!!!
+# Wish you happy coding!!!=
